@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_margin="10dp"
+    tools:context=".D2FormActivity">
+
+    <Button
+        android:id="@+id/btn_set_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="set Date"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_morning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Morning 2D"
+        android:inputType="number"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_evening"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:hint="Evening 2D" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/date_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="date"/>
+</LinearLayout>

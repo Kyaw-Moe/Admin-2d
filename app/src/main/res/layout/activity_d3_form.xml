@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".D3FormActivity">
+
+    <Button
+        android:id="@+id/btn_set_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="set Date"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_3d_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="3D"
+        android:inputType="number"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

@@ -51,7 +51,6 @@ public class D2FormActivity extends AppCompatActivity {
                 year = calendar.get(Calendar.YEAR);
                 month = calendar.get(Calendar.MONTH);
                 day = calendar.get(Calendar.DAY_OF_MONTH);
-                git init
                 DatePickerDialog datePickerDialog = new DatePickerDialog(D2FormActivity.this,
                         new DatePickerDialog.OnDateSetListener() {
                     @Override

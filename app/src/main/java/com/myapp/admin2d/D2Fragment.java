@@ -74,7 +74,6 @@ public class D2Fragment extends Fragment {
                     }
                 });
 
-
         return view;
     }
 }

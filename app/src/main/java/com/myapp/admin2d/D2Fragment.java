@@ -52,27 +52,27 @@ public class D2Fragment extends Fragment {
                 startActivity(intent);
             }
         });
-        db.collection(getString(R.string.parth))
-                .addSnapshotListener(new EventListener<QuerySnapshot>() {
-                    @Override
-                    public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable FirebaseFirestoreException e) {
-                        if (e != null) {
-                            Toast.makeText(context, "error", Toast.LENGTH_SHORT).show();
-                            return;
-                        }
-                        final ArrayList<D2> d2ArrayList = new ArrayList<>();
-                        for (QueryDocumentSnapshot doc: queryDocumentSnapshots) {
-                             d2ArrayList.add(doc.toObject(D2.class));
-                        }
-                        D2Adapter adapter = new D2Adapter();
-                        recyclerView.setAdapter(adapter);
-
-                        recyclerView.setHasFixedSize(true);
-                        LinearLayoutManager manager = new LinearLayoutManager(context,RecyclerView.VERTICAL,false);
-                        recyclerView.setLayoutManager(manager);
-
-                    }
-                });
+//        db.collection(getString(R.string.parth))
+//                .addSnapshotListener(new EventListener<QuerySnapshot>() {
+//                    @Override
+//                    public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable FirebaseFirestoreException e) {
+//                        if (e != null) {
+//                            Toast.makeText(context, "error", Toast.LENGTH_SHORT).show();
+//                            return;
+//                        }
+//                        final ArrayList<D2> d2ArrayList = new ArrayList<>();
+//                        for (QueryDocumentSnapshot doc: queryDocumentSnapshots) {
+//                             d2ArrayList.add(doc.toObject(D2.class));
+//                        }
+//                        D2Adapter adapter = new D2Adapter();
+//                        recyclerView.setAdapter(adapter);
+//
+//                        recyclerView.setHasFixedSize(true);
+//                        LinearLayoutManager manager = new LinearLayoutManager(context,RecyclerView.VERTICAL,false);
+//                        recyclerView.setLayoutManager(manager);
+//
+//                    }
+//                });
 
         return view;
     }
